@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SongCast</title>
+  
+  <!--Bootstrap Link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!--Link to jQuery Library-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Link to Moment.js-->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  
+  <!--Google Maps Link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+  <!--External Style Sheet-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+
+  <!--External Javascript-->
+  <script src="./assets/javascript/skycons.js"></script>
+  <script src="./assets/javascript/app.js"></script>
+  
+
+  
+</head>
+
+<body>
+
+
+  <video playsinline autoplay muted loop id="bgvid">
+    <source src="https://www.videvo.net/videvo_files/converted/2015_08/videos/PowerLines.mp439839.mp4" type="video/mp4">
+  </video>
+
+
+  <nav class="navbar justify-content-between">
+    <a class="navbar-brand">
+      <h1>Song Cast</h1>
+    </a>
+
+    <form class="form-inline">
+      <button class="btn btn-outline-light" type="button">
+        <h7>Save</h7>
+      </button>
+      <button class="btn btn-outline-light" type="button">
+        <h7>PlayBack</h7>
+      </button>
+      <button class="btn btn-outline-light" type="button">
+        <h7>Your Favorites</h7>
+      </button>
+
+    </form>
+    <form class="form-inline">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+  </nav>
+
+
+
+  <div class="row mt-5">
+    <div class="col-md-1 mx-auto"></div>
+    <div id="weather-div" class="col-md-4 mx-auto">
+        <h2 class="display-4">Current Weather</h2>
+        <h2>
+          <div id="temp"></div>
+          <div id="icon-div">
+            <canvas id="" width="64" height="64"></canvas>
+            
+    
+          </div>
+        </h2>
+        <h3>
+          <div id="location"></div>
+        </h3>
+       
+    </div>
+
+    <div id="music-div" class="col-md-4 mx-auto">
+      <h2 class="display-4">Now Playing...</h2>
+      
+      <iframe src="https://open.spotify.com/embed/track/7ixuc4KOSHm0BsrwsRLM3i" width="275" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="col-md-1 mx-auto"></div>
+  </div>
+
+  
+
+ 
+
+  
+
+</body>
+
+</html>
